@@ -1,37 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
 
 :root {
   --grey-500: #62748e;
-  --grey-600: #1e2939;
+  --grey-600: #475467;
   --brand-orange: #e6a14b;
+  --brand-teal: #21615c;
 }
 
 /* .dm-serif-text-regular {
     font-family: 'DM Sans Serif';
 } */
 
+#banner {
+  background-color: var(--brand-orange);
+  padding: 5rem 2rem;
+  text-align: center;
+  box-shadow: -2px 1px 56px 9px rgba(0,0,0,0.32);
+  -webkit-box-shadow: -2px 1px 56px 9px rgba(0,0,0,0.32);
+  -moz-box-shadow: -2px 1px 56px 9px rgba(0,0,0,0.32);
+  opacity: 0;
+  display: none;
+  h2 {
+    margin: 3rem;
+    color: var(--brand-teal);
+  }
+  p {
+    font-size: 2rem;
+    color: #fff;
+    width: 70%;
+    margin: auto;
+    font-family: 'DM Serif Text';;
+  }
+}
+
 body {
   margin: 0;
 }
 
+.filter-grey600-svg {
+  filter: brightness(0) saturate(100%) invert(27%) sepia(37%) saturate(340%) hue-rotate(175deg) brightness(101%) contrast(85%);
+}
 .filter-orange-svg {
   filter: invert(63%) sepia(74%) saturate(367%) hue-rotate(351deg) brightness(93%) contrast(93%);
 }
+.filter-white-svg {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(237deg) brightness(106%) contrast(101%);
+}
 
 footer {
-    position: absolute;
-    bottom: 0;
-    background-color: var(--bg-grey-600);
+    position: sticky;
+    background-color: var(--grey-600);
     color: #fff;
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 1rem;
+    img {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      vertical-align: bottom;
+      margin-right: 0.25rem;
+    }
+}
+
+.grid {
+  margin: 2rem auto 0;
+}
+
+.grid-col {
+  vertical-align: top;
+  .icon-container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 120px;
+    height: 120px;
+    background-color: var(--grey-600);
+    border-radius: 50%;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  &:first-of-type {
+    .icon-container {
+      img {
+        transform: rotateY(3.142rad);
+      }
+    }
+  }
+  h3 {
+    text-align: center;
+    /* font-family: 'Instrument Sans'; */
+  }
+  p {
+    font-size: 1rem;
+    color: var(--grey-500);
+  }
+}
+
+h* {
+  font-family: 'DM Serif Text';;
 }
 
 header {
-  font-family: 'DM Sans Serif';
+  /* font-family: 'DM Serif Text'; */
   width: 100%;
   button {
     background-color: #206963;
@@ -54,6 +132,7 @@ header {
       font-size: 3.5rem;
     }
     p, h1 {
+        font-family: 'DM Serif Text';
         color: #24726c;
         text-align: center;
         font-weight: 800;
@@ -64,15 +143,32 @@ header {
     font-size: 1.75rem;
     text-align: center;
     width: 85%;
-    margin: auto;
+    margin: 2rem auto;
     color: var(--grey-600);
-    font-family: 'Instrument Sans';
   }
+  .text {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    top: 0;
 
-  .grid {
-    margin: 2rem auto 0;
+    &:nth-child(1) {
+      animation: slideUp 6s linear forwards, fadeCycle 4s linear forwards; 
+      animation-delay: 0s;
+    }
+
+    &:nth-child(2) {
+      animation: slideUp 6s linear forwards, fadeCycle 4s linear forwards; 
+      animation-delay: 2s;
+    }
+
+    &:nth-child(3) {
+      animation: slideToFinal 4s forwards, fadeInStay 2s forwards;
+      animation-delay: 4s;
+      margin-top: -50px;
+    }
+
   }
-
   @media (min-width:992px) {
     .grid {
       width: 80%;
@@ -83,41 +179,6 @@ header {
       display: inline-block;
     }
   }
-
-  .grid-col {
-    vertical-align: top;
-    .icon-container {
-      display: flex;
-      margin-left: auto;
-      margin-right: auto;
-      justify-content: center;
-      align-items: center;
-      margin-top: 2rem;
-      width: 120px;
-      height: 120px;
-      background-color: var(--grey-600);
-      border-radius: 50%;
-      img {
-        width: 50px;
-        height: 50px;
-      }
-    }
-    &:first-of-type {
-      .icon-container {
-        img {
-          transform: rotateY(3.142rad);
-        }
-      }
-    }
-    h3 {
-      text-align: center;
-      font-family: 'Instrument Sans';
-    }
-    p {
-      font-size: 1rem;
-      color: var(--grey-500);
-    }
-  }
   nav {
     box-shadow: -4px 20px 27px 0px rgba(0,0,0,0.21);
     -webkit-box-shadow: -4px 20px 27px 0px rgba(0,0,0,0.21);
@@ -126,30 +187,75 @@ header {
       height: 50px;
     }
   }  
+  .headline,
+  .grid,
+  button {
+    opacity: 0;
+  }
+  .headline {
+    animation: fadeInStay 2s forwards;
+    animation-delay: 6s;
+  }
+  .grid {
+    animation: fadeInStay 2s forwards;
+    animation-delay: 7s;
+  }
+  button {
+    animation: fadeInStay 2s forwards;
+    animation-delay: 8s;
+  }
 }
 
-.text {
-  position: absolute;
+#how-it-works {
+  padding: 5rem 2.5rem 6.5rem;
   opacity: 0;
-  width: 100%;
-  top: 0;
-
-  &:nth-child(1) {
-    animation: slideUp 6s linear forwards, fadeCycle 4s linear forwards; 
-    animation-delay: 0s;
+  display: none;
+  @media (min-width:992px) {
+    .grid {
+      width: 75%;
+      margin: auto;
+    }
+    .grid-col {
+      width: 22%;
+      display: inline-block;
+      padding: 0 1.5rem;
+      margin: 0 1.5rem;
+      .icon-container {
+        background-color: transparent;
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      h3, p {
+        color: var(--grey-600);
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
   }
-
-  &:nth-child(2) {
-    animation: slideUp 6s linear forwards, fadeCycle 4s linear forwards; 
-    animation-delay: 2s;
+  h2 {
+    color: var(--grey-600);
   }
-
-  &:nth-child(3) {
-    animation: slideToFinal 4s forwards, fadeInStay 2s forwards;
-    animation-delay: 4s;
-    margin-top: -50px;
+  p {
+    font-size: 1.5rem;
+    color: var(--grey-500);
+    &:last-of-type {
+      margin-top: 2rem;
+    }
   }
+}
 
+p {
+  font-family: 'Instrument Sans';
+}
+
+.second-heading {
+    font-family: 'DM Serif Text';
+    font-size: 2.65rem;
+    font-weight: 800;
+    text-align: center;
 }
 
 /* Keyframes:
