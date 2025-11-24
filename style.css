@@ -19,8 +19,6 @@
   box-shadow: -2px 1px 56px 9px rgba(0,0,0,0.32);
   -webkit-box-shadow: -2px 1px 56px 9px rgba(0,0,0,0.32);
   -moz-box-shadow: -2px 1px 56px 9px rgba(0,0,0,0.32);
-  opacity: 0;
-  display: none;
   h2 {
     margin: 3rem;
     color: var(--brand-teal);
@@ -208,11 +206,9 @@ header {
 
 #how-it-works {
   padding: 5rem 2.5rem 6.5rem;
-  opacity: 0;
-  display: none;
   @media (min-width:992px) {
     .grid {
-      width: 75%;
+      width: 52%;
       margin: auto;
     }
     .grid-col {
@@ -256,6 +252,17 @@ p {
     font-size: 2.65rem;
     font-weight: 800;
     text-align: center;
+}
+
+section {
+  /* display: none; */
+  opacity: 0;
+  transition: opacity 1.5s ease-out;
+}
+
+section.fade-in {
+  /* display: block; */
+  opacity: 1;
 }
 
 /* Keyframes:
