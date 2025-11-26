@@ -8,10 +8,6 @@
   --brand-teal: #21615c;
 }
 
-/* .dm-serif-text-regular {
-    font-family: 'DM Sans Serif';
-} */
-
 #banner {
   background-color: var(--brand-orange);
   padding: 5rem 2rem;
@@ -94,7 +90,6 @@ footer {
   }
   h3 {
     text-align: center;
-    /* font-family: 'Instrument Sans'; */
   }
   p {
     font-size: 1rem;
@@ -118,6 +113,17 @@ header {
     border: none;
     border-radius: 0.25rem;
   }
+  .grid {
+    .grid-col {
+      h3 {
+        color: var(--grey-600);
+        font-size: 1.6rem;
+      }
+      p {
+        font-size: 1.25rem;
+      }
+    }
+  }
   h1 {
       font-size: 3.5rem;
   }
@@ -139,9 +145,6 @@ header {
   }
   p {
     font-size: 1.75rem;
-    text-align: center;
-    width: 85%;
-    margin: 2rem auto;
     color: var(--grey-600);
   }
   .text {
@@ -243,6 +246,52 @@ header {
   }
 }
 
+#form-ctn {
+  background-color: var(--brand-teal);
+  padding: 7rem 0;
+  color: #fff;
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+.headline {
+    text-align: center;
+    width: 85%;
+    margin: 2rem auto;
+}
+
+#lead-gen-form {
+  width: 35%;
+  margin: auto;
+  label, input {
+    display: block;
+    font-size: 1.3rem;
+  }
+  label {
+    color: #fff;
+    font-family: 'Instrument Sans';
+    margin-bottom: 0.5rem;
+  }
+  input {
+    width: 100%;
+    height: 2.25rem;
+    color: var(--brand-teal);
+    &[type="submit"] {
+      background-color: var(--brand-orange);
+      color: var(--grey-600);
+      font-weight: 800;
+      border: none;
+      border-radius: 12px;
+      padding: 0.75rem 0.5rem;
+      margin: 1rem auto;
+      width: 9.75rem;
+      height: 3rem;
+      line-height: 0.25;
+    }
+  }
+}
+
 p {
   font-family: 'Instrument Sans';
 }
@@ -255,7 +304,6 @@ p {
 }
 
 section {
-  /* display: none; */
   opacity: 0;
   transition: opacity 1.5s ease-out;
 }
