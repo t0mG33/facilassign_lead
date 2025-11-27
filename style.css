@@ -261,6 +261,21 @@ header {
     margin: 2rem auto;
 }
 
+.input-validation {
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+  &.success {
+    border: 2px solid green;
+    color: green;
+  }
+  &.error {
+    border: 2px solid red;
+    color: red;
+  }
+}
+
 #lead-gen-form {
   width: 35%;
   margin: auto;
