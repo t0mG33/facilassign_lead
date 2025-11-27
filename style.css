@@ -65,20 +65,24 @@ footer {
 
 .grid-col {
   vertical-align: top;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 12px 1px rgba(115, 115, 115, 0.26);
+  -webkit-box-shadow: 1px 1px 12px 1px rgba(115, 115, 115, 0.26);
+  -moz-box-shadow: 1px 1px 12px 1px rgba(115,115,115,0.26);
+  min-height: 410px;
   .icon-container {
     display: flex;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
-    width: 120px;
-    height: 120px;
     background-color: var(--grey-600);
-    border-radius: 50%;
+    padding: 4rem 2rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
     img {
-      width: 50px;
-      height: 50px;
+      width: 80px;
+      height: 80px;
     }
   }
   &:first-of-type {
@@ -94,6 +98,7 @@ footer {
   p {
     font-size: 1rem;
     color: var(--grey-500);
+    padding: 0 1.5rem;
   }
 }
 
@@ -104,15 +109,6 @@ h* {
 header {
   /* font-family: 'DM Serif Text'; */
   width: 100%;
-  button {
-    background-color: #206963;
-    color: #fff;
-    padding: 0.75rem;
-    margin: 3rem auto;
-    display: block;
-    border: none;
-    border-radius: 0.25rem;
-  }
   .grid {
     .grid-col {
       h3 {
@@ -176,8 +172,9 @@ header {
       margin: auto;
     }
     .grid-col {
-      width: 24%;
+      width: 20%;
       display: inline-block;
+      margin: 0 2.1rem;
     }
   }
   nav {
@@ -204,6 +201,14 @@ header {
   button {
     animation: fadeInStay 2s forwards;
     animation-delay: 8s;
+    background-color: #206963;
+    color: #fff;
+    padding: 0.75rem;
+    margin: 4rem auto;
+    display: block;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
   }
 }
 
@@ -222,8 +227,8 @@ header {
       .icon-container {
         background-color: transparent;
         img {
-          width: 100px;
-          height: 100px;
+          width: 80px;
+          height: 80px;
         }
       }
       h3, p {
@@ -258,7 +263,7 @@ header {
 .headline {
     text-align: center;
     width: 85%;
-    margin: 2rem auto;
+    margin: 4rem auto;
 }
 
 .input-validation {
