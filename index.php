@@ -1,3 +1,10 @@
+<!-- <?php
+    // Include your validator and submit logic
+    //ob_start(); // capture output from submit-email.php
+    //include 'submit-email.php';
+    //$message = ob_get_clean(); // store the output in a variable
+?> -->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -106,12 +113,17 @@
             <div id="form-ctn">
                 <h2 class="second-heading">Stay informed!</h2>
                 <p class="headline">We’re building something special, and we want you in on it from day one. Don’t miss your chance to be among the first to see how FacilAssign can transform the way people embrass flexibility in life and assign their rental leases on their own terms! Join our community today and stay ahead of the curve—your next favorite innovation is just around the corner.</p>
-                <form action="post" id="lead-gen-form">
+                
+                <form id="lead-gen-form" action="" method="post">
                     <figcaption>
                         <label for="e-mail-input">Enter your E-mail address</label>
-                        <!-- TO DO: build storage capacity (e.g DB or CSV) -->
-                        <!-- TO DO: Add input validation & sanitation on input filed -->
-                        <input id="e-mail-input" type="email" name="e-mail-input" />
+                        <!-- TO DO: 
+                            * Add unsubscribe option
+                            * e-mail verification
+                            * Privacy policy with acceptation slider (to enable the submit button)
+                        -->
+                        <input id="e-mail-input" type="email" name="email" value="<?php echo htmlspecialchars($_POST['email'] ?? ''); ?>" />
+                        <div id="message"></div>
                     </figcaption>
                     <input type="submit" value="Submit">
                 </form>
