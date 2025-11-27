@@ -28,6 +28,15 @@
   }
 }
 
+.bg-img {
+  opacity: 0.15;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
 body {
   margin: 0;
 }
@@ -65,6 +74,7 @@ footer {
 
 .grid-col {
   vertical-align: top;
+  background-color: #fff;
   border-radius: 0.5rem;
   box-shadow: 1px 1px 12px 1px rgba(115, 115, 115, 0.26);
   -webkit-box-shadow: 1px 1px 12px 1px rgba(115, 115, 115, 0.26);
@@ -107,8 +117,8 @@ h* {
 }
 
 header {
-  /* font-family: 'DM Serif Text'; */
   width: 100%;
+  min-height: 988px;
   .grid {
     .grid-col {
       h3 {
@@ -178,9 +188,11 @@ header {
     }
   }
   nav {
+    background-color: #fff;
     box-shadow: -4px 20px 27px 0px rgba(0,0,0,0.21);
     -webkit-box-shadow: -4px 20px 27px 0px rgba(0,0,0,0.21);
     -moz-box-shadow: -4px 20px 27px 0px rgba(0,0,0,0.21);
+    position: relative;
     img {
       height: 50px;
     }
