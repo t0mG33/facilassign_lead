@@ -124,6 +124,10 @@
                 
                 </div>
 
+                <div class="img-container">
+                    <img src="img/rhamely-IeEFv-23EzQ-unsplash_squared.jpg" alt="">
+                </div>
+
                 
             </div>
             <div id="form-ctn">
