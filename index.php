@@ -91,37 +91,40 @@
                     <h2 class="second-heading">How It Works</h2>
                     <p>Life don't always go according to plan.  What if you have to go live with a relative in order to care for them? Or you get a job opportunity across the province or across the country? Sometimes, it can be complicated and costly to assign a rental agreement that you just signed...</p>
                     <p>Our platform aims at simplifying the process of  lease assignment for Canadians while avoiding hefty lawyer fees. Our lease assignment documents are ready-to-use, proven to be accurate and tailored to your specific region. Our software is hosted right here, in Canada... and so is the data your data!</p>
+                
+                    <div class="grid">
+                        <div class="grid-col">
+                            <div class="icon-container">
+                                <img src="icons/questions-solid-full.svg" alt="Conversation Icon" class="filter-grey600-svg"/>
+                            </div>
+                            <div class="text-container">
+                                <h3>Answer a Few Questions</h3>
+                                <p>Tell us about your lease, landlord, and incoming tenant.</p>
+                            </div>
+                        </div>
+                        <div class="grid-col">
+                            <div class="icon-container">
+                                <img src="icons/write-solid-full.svg" alt="Pencil Icon" class="filter-grey600-svg"/>
+                            </div>
+                            <div class="text-container">
+                                <h3>Generate Your Agreement</h3>
+                                <p>Instantly create a lease assignment agreement tailored to your region.</p>
+                            </div>
+                        </div>
+                        <div class="grid-col">
+                            <div class="icon-container">
+                                <img src="icons/download-solid-full.svg" alt="Download Icon" class="filter-grey600-svg"/>
+                            </div>
+                            <div class="text-container">
+                                <h3>Download & Sign</h3>
+                                <p>Get a downloadable PDF or Word file — ready to sign and send.</p>
+                            </div>
+                        </div>
+                    </div>
+                
                 </div>
 
-                <div class="grid">
-                    <div class="grid-col">
-                        <div class="icon-container">
-                            <img src="icons/questions-solid-full.svg" alt="Conversation Icon" class="filter-grey600-svg"/>
-                        </div>
-                        <div class="text-container">
-                            <h3>Answer a Few Questions</h3>
-                            <p>Tell us about your lease, landlord, and incoming tenant.</p>
-                        </div>
-                    </div>
-                    <div class="grid-col">
-                        <div class="icon-container">
-                            <img src="icons/write-solid-full.svg" alt="Pencil Icon" class="filter-grey600-svg"/>
-                        </div>
-                        <div class="text-container">
-                            <h3>Generate Your Agreement</h3>
-                            <p>Instantly create a lease assignment agreement tailored to your region.</p>
-                        </div>
-                    </div>
-                    <div class="grid-col">
-                        <div class="icon-container">
-                            <img src="icons/download-solid-full.svg" alt="Download Icon" class="filter-grey600-svg"/>
-                        </div>
-                        <div class="text-container">
-                            <h3>Download & Sign</h3>
-                            <p>Get a downloadable PDF or Word file — ready to sign and send.</p>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
             <div id="form-ctn">
                 <!-- TO DO:
