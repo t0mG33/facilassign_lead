@@ -17,7 +17,7 @@ form.addEventListener('submit', function(e) {
 
     const formData = new FormData(form);
 
-    fetch('/submit-email.php', {
+    fetch('/run_submit.php', {
         method: 'POST',
         body: formData
     })
