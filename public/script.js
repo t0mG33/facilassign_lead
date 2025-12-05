@@ -9,13 +9,15 @@ window.addEventListener("scroll", () => {
 
 const form = document.getElementById('lead-gen-form');
 const messageDiv = document.getElementById('message');
+// const consentCheck = document.getElementById('consent-input');
+const emailInput = document.getElementById('email-input');
 
 form.addEventListener('submit', function(e) {
     e.preventDefault(); // Stop the normal page reload
 
     const formData = new FormData(form);
 
-    fetch('submit-email.php', {
+    fetch('/submit-email.php', {
         method: 'POST',
         body: formData
     })
@@ -29,3 +31,13 @@ form.addEventListener('submit', function(e) {
         console.error(error);
     });
 });
+
+
+emailInput.addEventListener('keyup', function(e) {
+  const emailAddress = e.target.value;
+  const regexEmail = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/;
+  if (emailAddress !== '' && emailAddress.length >= 3 && regexEmail.test(emailAddress)) {
+    document.getElementById('consent').style.display = 'block';
+  }
+})
+

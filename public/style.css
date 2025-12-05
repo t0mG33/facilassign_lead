@@ -42,6 +42,29 @@ body {
   font-family: 'Instrument Sans';
 }
 
+#consent {
+  display: none;
+  background-color: #fff;
+  color: var(--brand-teal);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* #consent-input,
+#consent-label {
+  display: inline-block;
+}
+
+#consent-input {
+  width: 3%;
+  height: 1.5rem;
+  vertical-align: top;
+}
+
+#consent-label {
+  width: 95%;
+} */
+
 .filter-grey600-svg {
   filter: brightness(0) saturate(100%) invert(27%) sepia(37%) saturate(340%) hue-rotate(175deg) brightness(101%) contrast(85%);
 }

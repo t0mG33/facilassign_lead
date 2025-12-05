@@ -1,9 +1,9 @@
-<!-- <?php
+<?php
     // Include your validator and submit logic
     //ob_start(); // capture output from submit-email.php
     //include 'submit-email.php';
     //$message = ob_get_clean(); // store the output in a variable
-?> -->
+?>
 
 <!DOCTYPE html>
 <html>
@@ -26,7 +26,7 @@
             >
             <nav class="">
                 <div class="">
-                    <img src="logo_fa_sm.svg" alt="Facilassign logo" class="" />
+                    <img src="img/logo_fa_sm.svg" alt="Facilassign logo" class="" />
                 </div>
             </nav>
 
@@ -139,16 +139,18 @@
                 
                 <form id="lead-gen-form" action="" method="post">
                     <figcaption>
-                        <label for="e-mail-input">Enter your E-mail address</label>
+                        <label for="email-input">Enter your E-mail address</label>
                         <!-- TO DO: 
-                            * Add unsubscribe option
                             * e-mail verification
-                            * Privacy policy with acceptation slider (to enable the submit button)
+                            * Privacy policy: https://www.privacypolicygenerator.info/
+                            * Content Security Policy: https://content-security-policy.com/examples/php/
                         -->
-                        <input id="e-mail-input" type="email" name="email" value="<?php echo htmlspecialchars($_POST['email'] ?? ''); ?>" />
+                        <input id="email-input" type="email" name="email" value="<?php echo htmlspecialchars($_POST['email'] ?? ''); ?>" />
                         <div id="message"></div>
                     </figcaption>
-                    <input type="submit" value="Submit">
+                    <p id="consent">Almost there! Before you officially join our community, please take a moment to review our <a href="">privacy policy</a>.</p>  
+                    <!-- <input id="subscriber-submit" type="submit" value="Submit" disabled> -->
+                     <input id="subscriber-submit" type="submit" value="Submit" />
                 </form>
             </div>
         </section>
