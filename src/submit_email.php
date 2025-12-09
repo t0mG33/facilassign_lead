@@ -4,6 +4,12 @@
     $validator = new EmailValidator();
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+        if (!isset($_POST['consent-input'])) {
+            echo '<p class="input-validation error">Error: You must agree to the terms.</p>';
+            return;
+        }
+
         $result = $validator->validate($_POST['email'], $checkDNS = false);
 
         if (!$result['success']) {
