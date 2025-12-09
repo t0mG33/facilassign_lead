@@ -142,15 +142,20 @@
                         <label for="email-input">Enter your E-mail address</label>
                         <!-- TO DO: 
                             * e-mail verification
-                            * Privacy policy: https://www.privacypolicygenerator.info/
                             * Content Security Policy: https://content-security-policy.com/examples/php/
                         -->
                         <input id="email-input" type="email" name="email" value="<?php echo htmlspecialchars($_POST['email'] ?? ''); ?>" />
                         <div id="message"></div>
                     </figcaption>
-                    <p id="consent">Almost there! Before you officially join our community, please take a moment to review our <a href="">privacy policy</a>.</p>  
-                    <!-- <input id="subscriber-submit" type="submit" value="Submit" disabled> -->
-                     <input id="subscriber-submit" type="submit" value="Submit" />
+                    <div id="consent">
+                        <p>Almost there! Before you officially join our community, please make sure to aknowlege below:</p>
+                        <figcaption>
+                            <input id="consent-input" type="checkbox" name="consent-input" />
+                            <label for="consent-input">By entering your email address below, you expressly consent to receive marketing emails from <strong>FacilAssign</strong>. You may unsubscribe at any time using the link in our emails. For more information, see our <a id="" href="#privacy">Privacy Policy</a></label>
+                        </figcaption>
+                    </div>
+                      
+                    <input id="subscriber-submit" type="submit" value="Submit" disabled>
                 </form>
             </div>
         </section>
@@ -161,6 +166,110 @@
         </footer>
 
         <script src="script.js" async defer></script>
+
+        <div id="privacy" class="overlay">
+            <div class="popup">
+
+                <h2>Privacy policy</h2>
+                <a class="close" href="#">&times;</a>
+                <p>Last updated <span id="privacy-update-date">08/12/2025</span></p>
+
+                <div class="content">
+                    <p>This Privacy Policy explains how we collect, use, and protect your information when you visit our website (the “Site”) and subscribe to our marketing communications. Our practices comply with <strong>Canada’s Anti-Spam Legislation (CASL)</strong> and the <strong>Personal Information Protection and Electronic Documents Act (PIPEDA)</strong>. By subscribing or providing your email address, you consent to the collection, use, and disclosure of your information as described below.</p>
+                    <div id="collection-of-private-info">
+                        <h3>1. Information We Collect</h3>
+                        <p>We only collect:</p>
+                        <ul>
+                            <li><strong>Email Address:</strong> Provided voluntarily when subscribing to newsletters, promotions, or updates.</li>
+                        </ul>
+                        <p>No other personal information (name, phone number, payment info) is collected unless explicitly provided.</p>
+                    </div>
+                    <div id="use-of-private-info">
+                        <h3>2. How We Use Your Email Address</h3>
+                        <p>We use your email address <strong>only</strong> to:</p>
+                        <ul>
+                            <li>Send newsletters, marketing content, and promotional offers you opt in to receive</li>
+                            <li>Manage your subscription, including processing unsubscribe requests</li>
+                            <li>Respond to questions or inquiries</li>
+                        </ul>
+                        <p>We do <strong>not</strong> sell, rent, or share your email address with third-party marketers.</p>
+                    </div>
+                    <div id="consent">
+                        <h3>3. Consent</h3>
+                        <p>We require <strong>express consent</strong> before sending marketing emails:</p>
+                        <ul>
+                            <li>By subscribing through our forms, you explicitly agree to receive emails from us.</li>
+                            <li>You may withdraw consent at any time by clicking “unsubscribe” in any email or contacting us directly.</li>
+                        </ul>
+                        <p><strong>Implied consent</strong> may exist in certain cases (e.g., previous business relationship), but we rely primarily on <strong>express opt-in</strong></p>
+                    </div>
+                    <div id="identification">
+                        <h3>4. Identification</h3>
+                        <ul>
+                            <li>Our legal business name: <strong>FacilAssign</strong></li>
+                            <li>A physical mailing address: **[Insert Address]**</li>
+                            <li>Contact information (email or phone)</li>
+                            <li> A clear and easy method to <strong>unsubscribe</strong> from future messages</li>
+                        </ul>
+                    </div>
+                    <div id="international-subscribers">
+                        <h3>5. International Subscribers</h3>
+                        <p>Our website is primarily intended for individuals in <strong>Canada</strong>.</p>
+                        <p>If you subscribe from outside Canada, including the U.S., your email address will still be processed according to <strong>Canadian privacy laws (PIPEDA) and CASL</strong>. By subscribing, you acknowledge your information may be transferred to Canada.</p>
+                    </div>
+                    <div id="data-storage-and-security">
+                        <h3>6. Data Storage and Security</h3>
+                        <p>We use industry-standard security measures to protect your email address from unauthorized access, misuse, or disclosure.</p>
+                        <p>Your data is accessible only to authorized personnel who need it to operate the Site or send communications.</p>
+                    </div>
+                    <div id="third-party-providers">
+                        <h3>7. Third-Party Service Providers</h3>
+                        <p>We may use email service providers (e.g., Mailchimp, ConvertKit) to manage subscriber lists and send communications.</p>
+                        <p>These providers:</p>
+                        <ul>
+                            <li>Act <strong>only on our behalf</strong></li>
+                            <li>May store or process data in Canada, the U.S., or other regions</li>
+                            <li>Cannot use your data for their own marketing purposes</li>
+                        </ul>
+                    </div>
+                    <div id="cookies-and-analytics">
+                        <h3>8. Cookies and Analytics</h3>
+                        <p>We may use cookies or analytics to understand website usage.</p>
+                        <p>These tools collect **non-identifiable data** only and are never linked to your email address.</p>
+                    </div>
+                    <div id="your-rights">
+                        <h3>9. Your Rights</h3>
+                        <p>Under PIPEDA and CASL, you have the right to:</p>
+                        <ul>
+                            <li>Access your personal information</li>
+                            <li>Request correction or deletion</li>
+                            <li>Withdraw consent to receive emails</li>
+                        </ul>
+                        <p>To exercise your rights, contact us at <strong>[Insert Contact Email]</strong>.</p>
+                    </div>
+                    <div id="data-retention">
+                        <h3>10. Data Retention</h3>
+                        <p>We retain your email address <strong>only as long as you remain subscribed</strong></p>
+                        <p>Once you unsubscribe, your email is removed from our active mailing lists and deleted within a reasonable time.</p>
+                    </div>
+                    <div id="children-privacy">
+                        <h3>11. Children’s Privacy</h3>
+                        <p>Our website is not intended for children under 13. We do not knowingly collect email addresses from children.</p>
+                    </div>
+
+                    <div id="changes-to-policy">
+                        <h3>12. Changes to This Privacy Policy</h3>
+                        <p>Any updates to this policy will be posted on this page with a revised “Last Updated” date.</p>
+                    </div>
+
+                    <div id="contact">
+                        <h3>13. Contact Us</h3>
+                        <p><strong>Email:</strong> [Insert Contact Email]</p>
+                        <p><strong>Address:</strong>[Insert Business Address]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     
     </body>
 </html>

@@ -5,6 +5,7 @@
   --grey-500: #62748e;
   --grey-600: #475467;
   --brand-orange: #e6a14b;
+  --brand-orange-lite: #e7ba82;
   --brand-teal: #21615c;
 }
 
@@ -48,22 +49,26 @@ body {
   color: var(--brand-teal);
   padding: 1rem;
   border-radius: 10px;
+  p {
+    margin-top: 0;
+  }
+  figcaption {
+    input,
+    label {
+      display: inline-block;
+    }
+    input {
+      width: 3%;
+      height: 1.5rem;
+      vertical-align: top;
+    }
+    label {
+      width: 95%;
+      color: var(--brand-teal);
+      font-size: 1.5rem;
+    }
+  }
 }
-
-/* #consent-input,
-#consent-label {
-  display: inline-block;
-}
-
-#consent-input {
-  width: 3%;
-  height: 1.5rem;
-  vertical-align: top;
-}
-
-#consent-label {
-  width: 95%;
-} */
 
 .filter-grey600-svg {
   filter: brightness(0) saturate(100%) invert(27%) sepia(37%) saturate(340%) hue-rotate(175deg) brightness(101%) contrast(85%);
@@ -387,6 +392,67 @@ header {
       width: 9.75rem;
       height: 3rem;
       line-height: 0.25;
+       &:disabled {
+        opacity: 0.85;
+        background-color: var(--brand-orange-lite);
+      }
+    }
+  }
+}
+
+#privacy {
+  &.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(33, 97, 92, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    &:target {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 80%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  color: var(--grey-500);
+  h2 {
+    margin-top: 0;
+    color: var(--brand-teal);
+  }
+  .content {
+    max-height: 60vh; 
+    overflow-y: auto; 
+    padding-right: 10px;
+    div {
+      margin-bottom: 2rem;
+      h3 {
+        color: var(--grey-600);
+      }
+    }
+  }
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--grey-600);
+    &:hover {
+      color: var(--brand-teal);
     }
   }
 }

@@ -9,7 +9,7 @@ window.addEventListener("scroll", () => {
 
 const form = document.getElementById('lead-gen-form');
 const messageDiv = document.getElementById('message');
-// const consentCheck = document.getElementById('consent-input');
+const consentCheck = document.getElementById('consent-input');
 const emailInput = document.getElementById('email-input');
 
 form.addEventListener('submit', function(e) {
@@ -38,6 +38,11 @@ emailInput.addEventListener('keyup', function(e) {
   const regexEmail = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/;
   if (emailAddress !== '' && emailAddress.length >= 3 && regexEmail.test(emailAddress)) {
     document.getElementById('consent').style.display = 'block';
+  } else {
+    document.getElementById('consent').style.display = 'none';
   }
 })
 
+consentCheck.addEventListener('change', function(e) {
+  e.target.checked ? document.getElementById("subscriber-submit").disabled = false : document.getElementById("subscriber-submit").disabled = true;
+})
