@@ -1,8 +1,5 @@
 <?php
-    // Include your validator and submit logic
-    //ob_start(); // capture output from submit-email.php
-    //include 'submit-email.php';
-    //$message = ob_get_clean(); // store the output in a variable
+    header("Content-Security-Policy: default-src 'self'");
 ?>
 
 <!DOCTYPE html>
@@ -142,7 +139,6 @@
                         <label for="email-input">Enter your E-mail address</label>
                         <!-- TO DO: 
                             * e-mail verification
-                            * Content Security Policy: https://content-security-policy.com/examples/php/
                         -->
                         <input id="email-input" type="email" name="email" value="<?php echo htmlspecialchars($_POST['email'] ?? ''); ?>" />
                         <div id="message"></div>
