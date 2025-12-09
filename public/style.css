@@ -35,7 +35,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: auto;
+  height: 95vh;
 }
 
 body {
@@ -48,6 +48,7 @@ body {
   background-color: #fff;
   color: var(--brand-teal);
   padding: 1rem;
+  margin-top: 1rem;
   border-radius: 10px;
   p {
     margin-top: 0;
@@ -151,6 +152,7 @@ header {
   position: relative;
   overflow: hidden;
   .grid {
+    margin: auto;
     .grid-col {
       h3 {
         color: var(--grey-600);
@@ -209,13 +211,65 @@ header {
   }
   @media (min-width:992px) {
     .grid {
-      width: 80%;
-      margin: auto;
+      width: 95%;
+      .grid-col {
+        width: 20%;
+        display: inline-block;
+      }
     }
-    .grid-col {
-      width: 20%;
-      display: inline-block;
-      margin: 0 2.1rem;
+  }
+  @media (min-width:992px) and (max-width:1199px) {
+    header {
+      min-height: unset;
+      .animIntro {
+        margin-bottom: 0;
+        h1 {
+          font-size: 2.75rem;
+        }
+        p {
+          font-size: 3.5rem;
+        }
+        p, h1 {
+            font-family: 'DM Serif Text';
+            color: #24726c;
+            text-align: center;
+            font-weight: 800;
+            margin: 0;
+        }
+      }
+      .headline {
+        margin: 0 auto 2rem;
+      }
+      .grid {
+        .grid-col {
+          min-height: 340px;
+          margin: 0 1.3rem;
+          .icon-container {
+            padding: 2rem;
+          }
+          h3 {
+
+          }
+          p {
+            padding: 0 0.75rem;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width:1200px) and (max-width:1754px) {
+    .grid {
+      .grid-col {
+        margin: 0 1.8rem;
+      }
+    }
+  }
+  @media (min-width:1755px) {
+    .grid {
+      width: 80%;
+      .grid-col {
+        margin: 0 2.1rem;
+      }
     }
   }
   nav {
@@ -224,6 +278,9 @@ header {
     -webkit-box-shadow: -4px 20px 27px 0px rgba(0,0,0,0.21);
     -moz-box-shadow: -4px 20px 27px 0px rgba(0,0,0,0.21);
     position: relative;
+    #navbar-logo-ctn {
+      padding: 0 3rem;
+    }
     img {
       height: 50px;
     }

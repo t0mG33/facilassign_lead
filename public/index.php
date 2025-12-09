@@ -21,8 +21,8 @@
                 src="img/tom-rumble-7lvzopTxjOU-unsplash.jpg"
                 alt=""
             >
-            <nav class="">
-                <div class="">
+            <nav>
+                <div id="navbar-logo-ctn">
                     <img src="img/logo_fa_sm.svg" alt="Facilassign logo" class="" />
                 </div>
             </nav>
