@@ -40,29 +40,37 @@
                     <div class="icon-container">
                         <img src="icons/gavel-solid-full.svg" alt="Gavel Icon" class="filter-orange-svg"/>
                     </div>
-                    <h3>Legally Sound</h3>
-                    <p>Region-specific agreements that follow local laws and lease terms.</p>
+                    <div class="text-container">
+                        <h3>Legally Sound</h3>
+                        <p>Region-specific agreements that follow local laws and lease terms.</p>
+                    </div>
                 </div>
                 <div class="grid-col">
                     <div class="icon-container">
                         <img src="icons/rocket-solid-full.svg" alt="Rocket Icon" class="filter-orange-svg"/>
                     </div>
-                    <h3>Fast &amp; Easy</h3>
-                    <p>Complete the form in under 10 minutes — no legal jargon.</p>
+                    <div class="text-container">
+                        <h3>Fast &amp; Easy</h3>
+                        <p>Complete the form in under 10 minutes — no legal jargon.</p>
+                    </div>
                 </div>
                 <div class="grid-col">
                     <div class="icon-container">
                         <img src="icons/money-no.png" alt="No-Dollar Icon" />
                     </div>
-                    <h3>No Lawyer Fee</h3>
-                    <p>Professional-quality agreements at a fraction of the cost of hiring a lawyer.</p>
+                    <div class="text-container">
+                        <h3>No Lawyer Fee</h3>
+                        <p>Professional-quality agreements at a fraction of the cost of hiring a lawyer.</p>   
+                    </div>
                 </div>
                 <div class="grid-col">
                     <div class="icon-container">
                         <img src="icons/lock-solid-full.svg" alt="Lock Icon" class="filter-orange-svg"/>
                     </div>
-                    <h3>Secure &amp; Private</h3>
-                    <p>Your data and documents are encrypted and never shared.</p>
+                    <div class="text-container">
+                        <h3>Secure &amp; Private</h3>
+                        <p>Your data and documents are encrypted and never shared.</p>
+                    </div>
                 </div>
             </div>
 
