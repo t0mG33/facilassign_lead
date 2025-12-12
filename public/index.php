@@ -90,6 +90,10 @@
                 </p>
             </div>
 
+            <div class="img-container">
+                <img src="img/vitaly-gariev-pyMjFpH8USU-unsplash.jpg" alt="">
+            </div>
+
             <div id="how-it-works">
 
                 <div class="section-card-wide bg-grey-600">
@@ -130,7 +134,8 @@
                 </div>
 
                 <div class="img-container">
-                    <img src="img/rhamely-IeEFv-23EzQ-unsplash_squared.jpg" alt="">
+                    <img src="img/home_mbl.jpg" alt="" class="mbl">
+                    <img src="img/home_dsk.jpg" alt="" class="dsk">
                 </div>
 
                 
