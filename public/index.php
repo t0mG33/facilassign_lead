@@ -81,9 +81,6 @@
         <section>
             
             <div id="banner">
-                <!-- TO DO:
-                    * Add gradient 
-                -->
                 <h2 class="second-heading">Legal Peace of Mind – Without the Legal Bill</h2>
                 <p>
                     Don’t risk using outdated templates or handwritten agreements.  Our platform keeps things professional, clear, and compliant — without the $300/hour lawyer.
@@ -141,18 +138,12 @@
                 
             </div>
             <div id="form-ctn">
-                <!-- TO DO:
-                    * Add gradient 
-                -->
                 <h2 class="second-heading">Stay informed!</h2>
                 <p class="headline">We’re building something special, and we want you in on it from day one. Don’t miss your chance to be among the first to see how FacilAssign can transform the way people embrass flexibility in life and assign their rental leases on their own terms! Join our community today and stay ahead of the curve. Your hassle-free lease transfer solution is just around the corner.</p>
                 
                 <form id="lead-gen-form" action="" method="post">
                     <figcaption>
                         <label for="email-input">Enter your E-mail address</label>
-                        <!-- TO DO: 
-                            * e-mail verification
-                        -->
                         <input id="email-input" type="email" name="email" value="<?php echo htmlspecialchars($_POST['email'] ?? ''); ?>" />
                         <div id="message"></div>
                     </figcaption>
