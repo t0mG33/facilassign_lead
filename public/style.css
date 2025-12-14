@@ -429,6 +429,7 @@ header {
       }
       .text-container {
         grid-column: 2 / span 4;
+        padding-right: 1rem;
         h3, p {
           color: var(--grey-600);
         }
@@ -518,15 +519,16 @@ header {
     padding: 5rem 2.5rem 6.5rem;
     background-color: lightgray;
     .section-card-wide {
-      width: 57.5%;
+      /* width: 45%; */
       display: inline-block;
+      /* height: 818px; */
         h2 {
         margin: 2.5rem 0 3rem;
       }
     }
 
     .img-container {
-      width: 32%;
+      /* width: 45%; */
       display: inline-block;
       margin-left: 2rem;
       border-radius: 0.5rem;
@@ -536,6 +538,57 @@ header {
       .dsk {
         display: block;
       }
+    }
+  }
+}
+
+@media (min-width:1200px) and (max-width:1500px) {
+  #how-it-works {
+    .grid {
+      .grid-col {
+          width: 100%;
+          display: grid;
+      }
+    }
+    .section-card-wide {
+      width: 40%;
+      padding-bottom: 1rem;
+      height: 818px;
+      h2 {
+        margin: 1.5rem 0;
+      }
+    }
+
+    .img-container {
+      width: 50%;
+      max-height: 830px;
+    }
+  }
+}
+
+@media (min-width:1500px) {
+  #how-it-works {
+    .section-card-wide {
+      width: 57.5%;
+      padding-bottom: 2rem;
+    }
+
+    .img-container {
+      width: 32%;
+      position: relative;
+      height: 625px;
+      .dsk {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+@media (min-width:1918px) {
+  #how-it-works {
+    .section-card-wide {
+      padding-bottom: 3.5rem;
     }
   }
 }
