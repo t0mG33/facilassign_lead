@@ -74,7 +74,7 @@
                 </div>
             </div>
 
-            <button>Sign-up for updates</button>
+            <button id="headerSignupBtn">Sign-up for updates</button>
         
         </header>
 
@@ -141,7 +141,7 @@
                 <h2 class="second-heading">Stay informed!</h2>
                 <p class="headline">We’re building something special, and we want you in on it from day one. Don’t miss your chance to be among the first to see how FacilAssign can transform the way people embrass flexibility in life and assign their rental leases on their own terms! Join our community today and stay ahead of the curve. Your hassle-free lease transfer solution is just around the corner.</p>
                 
-                <form id="lead-gen-form" action="" method="post">
+                <form id="signup-form" action="" method="post">
                     <figcaption>
                         <label for="email-input">Enter your E-mail address</label>
                         <input id="email-input" type="email" name="email" value="<?php echo htmlspecialchars($_POST['email'] ?? ''); ?>" />

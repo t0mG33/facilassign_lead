@@ -7,10 +7,11 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const form = document.getElementById('lead-gen-form');
+const form = document.getElementById('signup-form');
 const messageDiv = document.getElementById('message');
 const consentCheck = document.getElementById('consent-input');
 const emailInput = document.getElementById('email-input');
+const headSignupBtn = document.getElementById('headerSignupBtn');
 
 form.addEventListener('submit', function(e) {
     e.preventDefault(); // Stop the normal page reload
@@ -41,8 +42,20 @@ emailInput.addEventListener('keyup', function(e) {
   } else {
     document.getElementById('consent').style.display = 'none';
   }
-})
+});
 
 consentCheck.addEventListener('change', function(e) {
   e.target.checked ? document.getElementById("subscriber-submit").disabled = false : document.getElementById("subscriber-submit").disabled = true;
+});
+
+headSignupBtn.addEventListener('click', function(e) {
+  if ( e.target && form) {
+    try {
+      form.scrollIntoView({ behavior: "smooth" });
+    } catch (err) {
+        console.error("Scrolling failed:", err);
+        // Fallback for very old browsers
+        window.scrollTo(0, form.offsetTop);
+    }
+  }
 })
