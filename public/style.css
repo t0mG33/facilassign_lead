@@ -29,6 +29,16 @@
   }
 }
 
+@media screen and (max-width:390px) {
+  #banner {
+    padding: 3rem 1rem;
+    p {
+      font-size: 1.5rem;
+      width: 95%;
+    }
+  }
+}
+
 .bg-img {
   opacity: 0.15;
   position: absolute;
@@ -59,12 +69,12 @@ body {
       display: inline-block;
     }
     input {
-      width: 3%;
-      height: 1.5rem;
+      width: 15px;
+      height: 15px;
       vertical-align: top;
     }
     label {
-      width: 95%;
+      width: 90%;
       color: var(--brand-teal);
       font-size: 1.5rem;
     }
@@ -171,6 +181,13 @@ header {
   h1 {
       font-size: 3.5rem;
   }
+
+  @media screen and (max-width:390px) {
+    h1 {
+      font-size: 3.25rem;
+    }
+  }
+
   .animIntro {
     position: relative;
     height: 2.5rem;
@@ -667,6 +684,18 @@ header {
         background-color: var(--brand-orange-lite);
       }
     }
+  }
+}
+
+@media screen and (max-width:834px) {
+  #signup-form {
+    width: 360px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  #signup-form {
+    width: 300px;
   }
 }
 
