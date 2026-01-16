@@ -172,7 +172,7 @@
 
                 <h2>Privacy policy</h2>
                 <a class="close" href="#">&times;</a>
-                <p>Last updated <span id="privacy-update-date">08/12/2025</span></p>
+                <p>Last updated <span id="privacy-update-date">15/01/2026</span></p>
 
                 <div class="content">
                     <p>This Privacy Policy explains how we collect, use, and protect your information when you visit our website (the “Site”) and subscribe to our marketing communications. Our practices comply with <strong>Canada’s Anti-Spam Legislation (CASL)</strong> and the <strong>Personal Information Protection and Electronic Documents Act (PIPEDA)</strong>. By subscribing or providing your email address, you consent to the collection, use, and disclosure of your information as described below.</p>
@@ -203,15 +203,6 @@
                         </ul>
                         <p><strong>Implied consent</strong> may exist in certain cases (e.g., previous business relationship), but we rely primarily on <strong>express opt-in</strong></p>
                     </div>
-                    <div id="identification">
-                        <h3>4. Identification</h3>
-                        <ul>
-                            <li>Our legal business name: <strong>FacilAssign</strong></li>
-                            <li>A physical mailing address: **[Insert Address]**</li>
-                            <li>Contact information (email or phone)</li>
-                            <li> A clear and easy method to <strong>unsubscribe</strong> from future messages</li>
-                        </ul>
-                    </div>
                     <div id="international-subscribers">
                         <h3>5. International Subscribers</h3>
                         <p>Our website is primarily intended for individuals in <strong>Canada</strong>.</p>
@@ -220,15 +211,15 @@
                     <div id="data-storage-and-security">
                         <h3>6. Data Storage and Security</h3>
                         <p>We use industry-standard security measures to protect your email address from unauthorized access, misuse, or disclosure.</p>
-                        <p>Your data is accessible only to authorized personnel who need it to operate the Site or send communications.</p>
+                        <p>Your data is accessible only to authorized personnel who need it to send communications about early access to our product.</p>
                     </div>
                     <div id="third-party-providers">
                         <h3>7. Third-Party Service Providers</h3>
-                        <p>We may use email service providers (e.g., Mailchimp, ConvertKit) to manage subscriber lists and send communications.</p>
-                        <p>These providers:</p>
+                        <p>We may use Web Hosting Canada's "Mailer Mojo" as our email service provider to manage subscriber lists and send communications.</p>
+                        <p>This provider:</p>
                         <ul>
-                            <li>Act <strong>only on our behalf</strong></li>
-                            <li>May store or process data in Canada, the U.S., or other regions</li>
+                            <li>Acts <strong>only on our behalf</strong></li>
+                            <li>May store or process data in Canada</li>
                             <li>Cannot use your data for their own marketing purposes</li>
                         </ul>
                     </div>
@@ -245,7 +236,7 @@
                             <li>Request correction or deletion</li>
                             <li>Withdraw consent to receive emails</li>
                         </ul>
-                        <p>To exercise your rights, contact us at <strong>[Insert Contact Email]</strong>.</p>
+                        <p>To exercise your rights, contact us at <strong>privacy@facilassign.com</strong>.</p>
                     </div>
                     <div id="data-retention">
                         <h3>10. Data Retention</h3>
@@ -263,9 +254,9 @@
                     </div>
 
                     <div id="contact">
-                        <h3>13. Contact Us</h3>
-                        <p><strong>Email:</strong> [Insert Contact Email]</p>
-                        <p><strong>Address:</strong>[Insert Business Address]</p>
+                        <h3>For questions about our privacy practices or to access your personal information, please contact:</h3>
+                        <p><strong>FacilAssign - Privacy Officer</strong></p>
+                        <p><strong>Email:</strong> privacy@facilassign.com</p>
                     </div>
                 </div>
             </div>
