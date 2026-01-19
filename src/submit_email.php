@@ -13,7 +13,8 @@
         $result = $validator->validate($_POST['email'], $checkDNS = false);
 
         if (!$result['success']) {
-            echo '<p class="input-validation error">Error: ' . htmlspecialchars($result['error']) . '</p>';
+            error_log('DB error: ' . $result['error']);
+            echo '<p class="input-validation error">Something went wrong. Please try again later.</p>';
             return;
         }
 
@@ -22,6 +23,8 @@
 
         // Include database connection
         require_once 'db_conn.php';
+
+        $conn->set_charset('utf8mb4');
 
         // Check if email already exists (case-insensitive)
         $stmt = $conn->prepare("SELECT id FROM subscribers WHERE LOWER(email) = LOWER(?)");
@@ -47,7 +50,8 @@
                 ' has been saved successfully. Thank you!
             </p>';
         } else {
-            echo '<p class="input-validation error">Error saving email: ' . htmlspecialchars($stmt->error) . '</p>';
+            error_log('DB error: ' . $stmt->error);
+            echo '<p class="input-validation error">Something went wrong. Please try again later.</p>';
         }
 
         // Close connection
