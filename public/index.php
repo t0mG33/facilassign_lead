@@ -33,46 +33,9 @@
                 <h1 class="text">Legally transfer your rental lease in minutes</h1>
             </div>
 
-            <p class="headline">Whether you're a tenant moving early, a landlord or real estate agent managing a lease transfer, our platform creates ready-to-sign and compliant lease assignment agreements tailored to your region.</p>
-            
-            <div class="grid">
-                <div class="grid-col">
-                    <div class="icon-container">
-                        <img src="icons/gavel-solid-full.svg" alt="Gavel Icon" class="filter-orange-svg"/>
-                    </div>
-                    <div class="text-container">
-                        <h3>Legally Sound</h3>
-                        <p>Region-specific agreements that follow local laws and lease terms.</p>
-                    </div>
-                </div>
-                <div class="grid-col">
-                    <div class="icon-container">
-                        <img src="icons/rocket-solid-full.svg" alt="Rocket Icon" class="filter-orange-svg"/>
-                    </div>
-                    <div class="text-container">
-                        <h3>Fast &amp; Easy</h3>
-                        <p>Complete the form in under 10 minutes — no legal jargon.</p>
-                    </div>
-                </div>
-                <div class="grid-col">
-                    <div class="icon-container">
-                        <img src="icons/money-no.png" alt="No-Dollar Icon" />
-                    </div>
-                    <div class="text-container">
-                        <h3>No Lawyer Fee</h3>
-                        <p>Professional-quality agreements at a fraction of the cost of hiring a lawyer.</p>   
-                    </div>
-                </div>
-                <div class="grid-col">
-                    <div class="icon-container">
-                        <img src="icons/lock-solid-full.svg" alt="Lock Icon" class="filter-orange-svg"/>
-                    </div>
-                    <div class="text-container">
-                        <h3>Secure &amp; Private</h3>
-                        <p>Your data and documents are encrypted and never shared.</p>
-                    </div>
-                </div>
-            </div>
+            <p class="headline">We are buidling an easy, fast and straightforward service that adapts to canadian way of life!</p>
+
+            <p class="headline">Whether you're a tenant moving early, a landlord or real estate agent managing a lease transfer, our platform creates ready-to-sign lease assignment agreements tailored to your region.</p>
 
             <button id="headerSignupBtn">Sign-up for updates</button>
         
@@ -81,10 +44,8 @@
         <section>
             
             <div id="banner">
-                <h2 class="second-heading">Legal Peace of Mind – Without the Legal Bill</h2>
-                <p>
-                    Don’t risk using outdated templates or handwritten agreements.  Our platform keeps things professional, clear, and compliant — without the $300/hour lawyer.
-                </p>
+                <h2 class="second-heading">Generate your residential lease assignment agreements with ease</h2>
+                <p class="headline">With customizable templates, our platform helps you structure lease assignment documents.</p>
             </div>
 
             <div class="img-container">
@@ -96,7 +57,7 @@
                 <div class="section-card-wide bg-grey-600">
                     <h2 class="second-heading">How It Works</h2>
                     <p>Life don't always go according to plan.  What if you have to go live with a relative in order to care for them? Or you get a job opportunity across the province or across the country? Sometimes, it can be complicated and costly to assign a rental agreement that you just signed...</p>
-                    <p>Our platform aims at simplifying the process of  lease assignment for Canadians while avoiding hefty lawyer fees. Our lease assignment documents are ready-to-use, proven to be accurate and tailored to your specific region. Our software is hosted right here, in Canada... and so is the data your data!</p>
+                    <p>Our platform aims at simplifying the process of lease assignment for Canadians. Our lease assignment documents are ready-to-use, and tailored to your specific region. Our software is hosted right here, in Canada... and so is the data your data!</p>
                 
                     <div class="grid">
                         <div class="grid-col">

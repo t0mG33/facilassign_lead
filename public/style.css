@@ -403,6 +403,14 @@ header {
   .headline {
     animation: fadeInStay 2s forwards;
     animation-delay: 6s;
+    margin: 8rem auto;
+    font-size: 2.25rem;
+    color: #206963;
+  }
+  @media (max-width:600px) {
+    .headline {
+      font-size: 1.75rem;
+    }
   }
   .grid {
     animation: fadeInStay 2s forwards;
@@ -414,7 +422,7 @@ header {
     background-color: #206963;
     color: #fff;
     padding: 0.75rem;
-    margin: 4rem auto;
+    margin: 7.5rem auto;
     display: block;
     border: none;
     border-radius: 0.25rem;
